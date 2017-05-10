@@ -90,7 +90,7 @@
             <field name="groups" eval="[(4, ref('base.group_sale_salesman_all_leads'))]"/>
         </record>
         <!-- pricelist supplierinfo -->
-        <record id="pricelistsupplierinfo_personal_rule" model="ir.rule">
+        <record id="pricelistpartnerinfo_personal_rule" model="ir.rule">
             <field name="name">Personal Customer Pricelist Supplierinfo</field>
             <field ref="product.model_pricelist_partnerinfo" name="model_id"/>
             <field name="domain_force">[('partner.user_id','=',user.id)]</field>
@@ -100,7 +100,7 @@
             <field name="perm_create" eval="False"/>
             <field name="perm_unlink" eval="False"/>
         </record>
-        <record id="supplierinfo_all_rule" model="ir.rule">
+        <record id="partnerinfo_all_rule" model="ir.rule">
             <field name="name">All Pricelist Supplierinfo</field>
             <field ref="product.model_pricelist_partnerinfo" name="model_id"/>
             <field name="domain_force">[(1,'=',1)]</field>
